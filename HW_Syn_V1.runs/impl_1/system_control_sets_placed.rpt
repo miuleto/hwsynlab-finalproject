@@ -1,0 +1,165 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec  6 18:08:17 2024
+| Host         : DESKTOP-4M7DPRK running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
+| Design       : system
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    94 |
+| Unused register locations in slices containing registers |   364 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           42 |
+|      2 |            1 |
+|      5 |            2 |
+|      6 |            1 |
+|      7 |           35 |
+|      8 |            6 |
+|     10 |            2 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              59 |           20 |
+| No           | No                    | Yes                    |              46 |           25 |
+| No           | Yes                   | No                     |             136 |           41 |
+| Yes          | No                    | No                     |             272 |           88 |
+| Yes          | No                    | Yes                    |              17 |            6 |
+| Yes          | Yes                   | No                     |               2 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+-----------------------------------------------+------------------------------------------------+------------------+----------------+
+|               Clock Signal              |                 Enable Signal                 |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-----------------------------------------+-----------------------------------------------+------------------------------------------------+------------------+----------------+
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_0                          |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_5                          |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_6                          |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_4                          |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_12                         |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_14                         |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_9                          |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_2                          |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_8                          |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_7                          |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_15                         |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_13                         |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_3                          |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_10                         |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_11                         |                1 |              1 |
+|  crossBoardUART/receiver/received_reg_0 |                                               | setSignal/pulse_reg_1                          |                1 |              1 |
+|  setSignal/pulse_reg_9                  |                                               | setSignal/pulse_reg_6                          |                1 |              1 |
+|  setSignal/pulse_reg_8                  |                                               | setSignal/pulse_reg_7                          |                1 |              1 |
+|  setSignal/pulse_reg_15                 |                                               | setSignal/pulse_reg_0                          |                1 |              1 |
+|  setSignal/pulse_reg_13                 |                                               | setSignal/pulse_reg_2                          |                1 |              1 |
+|  setSignal/pulse_reg_10                 |                                               | setSignal/pulse_reg_5                          |                1 |              1 |
+|  setSignal/pulse_reg_11                 |                                               | setSignal/pulse_reg_4                          |                1 |              1 |
+|  baud_BUFG                              | boardToVgaUART/receiver/data_out[6]           |                                                |                1 |              1 |
+|  baud_BUFG                              | boardToVgaUART/receiver/data_out[0]           |                                                |                1 |              1 |
+|  baud_BUFG                              | boardToVgaUART/receiver/data_out[4]           |                                                |                1 |              1 |
+|  baud_BUFG                              | boardToVgaUART/receiver/data_out[2]           |                                                |                1 |              1 |
+|  baud_BUFG                              | boardToVgaUART/receiver/data_out[7]           |                                                |                1 |              1 |
+|  baud_BUFG                              | boardToVgaUART/receiver/data_out[1]           |                                                |                1 |              1 |
+|  baud_BUFG                              | boardToVgaUART/receiver/data_out[5]           |                                                |                1 |              1 |
+|  baud_BUFG                              | boardToVgaUART/receiver/data_out[3]           |                                                |                1 |              1 |
+|  baud_BUFG                              | boardToVgaUART/transmitter/bit_out_i_2_n_0    | boardToVgaUART/transmitter/bit_out0            |                1 |              1 |
+|  last_bit_reg_i_1_n_0                   | crossBoardUART/receiver/data_out[1]           |                                                |                1 |              1 |
+|  last_bit_reg_i_1_n_0                   | crossBoardUART/receiver/data_out[2]           |                                                |                1 |              1 |
+|  last_bit_reg_i_1_n_0                   | crossBoardUART/receiver/data_out[3]           |                                                |                1 |              1 |
+|  last_bit_reg_i_1_n_0                   | crossBoardUART/receiver/data_out[5]           |                                                |                1 |              1 |
+|  last_bit_reg_i_1_n_0                   | crossBoardUART/receiver/data_out[6]           |                                                |                1 |              1 |
+|  last_bit_reg_i_1_n_0                   | crossBoardUART/receiver/data_out[7]           |                                                |                1 |              1 |
+|  last_bit_reg_i_1_n_0                   | crossBoardUART/receiver/data_out[0]           |                                                |                1 |              1 |
+|  last_bit_reg_i_1_n_0                   | crossBoardUART/receiver/data_out[4]           |                                                |                1 |              1 |
+|  last_bit_reg_i_1_n_0                   | crossBoardUART/transmitter/bit_out_i_2__0_n_0 | crossBoardUART/transmitter/bit_out0            |                1 |              1 |
+|  setSignal/pulse_reg_12                 |                                               | setSignal/pulse_reg_3                          |                1 |              1 |
+|  setSignal/pulse_reg_14                 |                                               | setSignal/pulse_reg_1                          |                1 |              1 |
+|  segmentCtrl/clkDiv/CLK                 |                                               |                                                |                1 |              2 |
+|  clk_IBUF_BUFG                          | textGen/rightMoveSignal/E[0]                  | reset_IBUF                                     |                2 |              5 |
+|  clk_IBUF_BUFG                          | textGen/last_row[4]_i_1_n_0                   | reset_IBUF                                     |                2 |              5 |
+|  clk_IBUF_BUFG                          | vgaCtrl/w_p_tick                              |                                                |                4 |              6 |
+|  clk_IBUF_BUFG                          | textGen/max_row[11][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[7][6]_i_1_n_0                 |                                                |                4 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[17][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[2][6]_i_1_n_0                 |                                                |                1 |              7 |
+|  last_bit_reg_i_1_n_0                   |                                               |                                                |                2 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[1][6]_i_1_n_0                 |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[12][6]_i_1_n_0                |                                                |                3 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[10][6]_i_1_n_0                |                                                |                2 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[14][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[0][6]_i_1_n_0                 |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[13][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[15][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[5][6]_i_1_n_0                 |                                                |                2 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[9][6]_i_1_n_0                 |                                                |                4 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[22][6]_i_1_n_0                |                                                |                2 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[24][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[26][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[28][6]_i_1_n_0                |                                                |                2 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[31][6]_i_1_n_0                |                                                |                4 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[23][6]_i_1_n_0                |                                                |                4 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[16][6]_i_1_n_0                |                                                |                2 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[8][6]_i_1_n_0                 |                                                |                3 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[25][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[6][6]_i_1_n_0                 |                                                |                2 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[19][6]_i_1_n_0                |                                                |                3 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[20][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[21][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/rightMoveSignal/pulse_reg_0[0]        | reset_IBUF                                     |                2 |              7 |
+|  baud_BUFG                              |                                               |                                                |                3 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[29][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[18][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[3][6]_i_1_n_0                 |                                                |                2 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[30][6]_i_1_n_0                |                                                |                1 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[4][6]_i_1_n_0                 |                                                |                3 |              7 |
+|  clk_IBUF_BUFG                          | textGen/max_row[27][6]_i_1_n_0                |                                                |                1 |              7 |
+|  last_bit_reg_i_1_n_0                   |                                               | crossBoardUART/transmitter/count[7]_i_1__2_n_0 |                2 |              8 |
+|  baud_BUFG                              |                                               | boardToVgaUART/receiver/count[7]_i_1_n_0       |                2 |              8 |
+|  baud_BUFG                              |                                               | boardToVgaUART/transmitter/count[7]_i_1__0_n_0 |                2 |              8 |
+|  last_bit_reg_i_1_n_0                   |                                               | crossBoardUART/receiver/count[7]_i_1__1_n_0    |                3 |              8 |
+|  last_bit_reg_i_1_n_0                   | crossBoardUART/transmitter/temp[7]_i_1__0_n_0 |                                                |                3 |              8 |
+|  baud_BUFG                              | boardToVgaUART/transmitter/temp[7]_i_1_n_0    |                                                |                3 |              8 |
+|  vgaCtrl/w_p_tick                       | vgaCtrl/v_count_next_1                        |                                                |                3 |             10 |
+|  vgaCtrl/w_p_tick                       |                                               |                                                |                3 |             10 |
+|  clk_IBUF_BUFG                          |                                               | reset_IBUF                                     |                9 |             30 |
+|  clk_IBUF_BUFG                          |                                               | boardToVgaUART/baudrate/clear                  |                8 |             32 |
+|  clk_IBUF_BUFG                          |                                               | crossBoardUART/baudrate/counter[0]_i_1__0_n_0  |                8 |             32 |
+|  clk_IBUF_BUFG                          |                                               | segmentCtrl/clkDiv/counter[0]_i_1__1_n_0       |                8 |             32 |
+|  clk_IBUF_BUFG                          |                                               |                                                |               11 |             33 |
++-----------------------------------------+-----------------------------------------------+------------------------------------------------+------------------+----------------+
+
+
